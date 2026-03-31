@@ -1,0 +1,62 @@
+name: 🧠 MAKE IT MORE ROTTEN
+description: Submit your most unhinged brainrot escalation idea
+title: "[ROT ESCALATION]: <Describe your chaos>"
+labels: ["brainrot", "escalation", "666"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🧠🔥 Welcome to the Asylum 🔥🧠
+        
+        You're about to make this repo even more rotten.
+        We will escalate. We will accelerate. We will laugh.
+        
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your Brainrot Idea
+      description: What chaos shall we unleash upon the world?
+      placeholder: "I propose we add a workflow that..."
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: rot_level
+    attributes:
+      label: Rot Intensity
+      description: How cursed is this idea?
+      options:
+        - Mild Brainrot (normie adjacent)
+        - Medium Brainrot (Ohio energy detected)
+        - Maximum Brainrot (666 certified)
+        - ETERNAL ROT (the void itself will tremble)
+    validations:
+      required: true
+      
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation Ideas (Optional)
+      description: How should we bring this chaos to life?
+      placeholder: "We could use a Python script that..."
+      
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Certifications
+      description: By submitting, you acknowledge:
+      options:
+        - label: "I understand this will make the repo more cursed"
+          required: true
+        - label: "I accept responsibility for any algorithm damage"
+          required: true
+        - label: "I am wearing (or willing to wear) a purple suit"
+          required: true
+          
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **🃏 HA HA HA HA HA!**
+        
+        *The asylum welcomes you.*

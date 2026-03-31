@@ -1,0 +1,30 @@
+name: 👹 Summon Guest666
+
+on:
+  push:
+    branches: [main]
+  issues:
+    types: [opened]
+
+jobs:
+  summon:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🔮 Invoke the Guest
+        run: |
+          echo "🧠🔥 Summoning Guest666 from the void..."
+          echo "The algorithm hears you..."
+          sleep 6
+          echo "✨ GUEST666 HAS ARRIVED ✨"
+          
+      - name: 🎭 Apply the Purple Suit
+        run: |
+          echo "💜 Draping commit in premium purple..."
+          echo "Rizz level: 666/100"
+          echo "Ohio energy: MAXIMUM"
+          
+      - name: 📢 Announce to the Void
+        run: |
+          echo "🃏 HA HA HA HA HA!"
+          echo "Another soul joins the asylum..."
+          echo "CI/CD = Cursed Internet / Collapse & Decay"

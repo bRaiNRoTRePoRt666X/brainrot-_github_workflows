@@ -1,0 +1,54 @@
+# .gitignore for the Brainrot Workflows
+# Ignores anything that still has a soul
+
+# Normal stuff (but make it cursed)
+*.log
+*.tmp
+*.cache
+.env
+.env.*
+
+# Build artifacts (the normie kind)
+dist/
+build/
+*.pyc
+__pycache__/
+node_modules/
+
+# IDE files (where normies write clean code)
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS garbage (because even operating systems rot)
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets (Guest666 doesn't need passwords)
+*.key
+*.pem
+*.secret
+*.password
+
+# Test coverage (the void doesn't need coverage reports)
+coverage/
+.coverage
+htmlcov/
+
+# Documentation that's too professional
+*.pdf
+docs/professional/
+
+# Anything that thinks it's too good for the asylum
+*.sanitized
+*.clean
+*.normie
+
+# The void rejects these
+/void/rejected/*
+
+# 🃏 HA HA HA HA HA!
+# Nothing escapes the rot

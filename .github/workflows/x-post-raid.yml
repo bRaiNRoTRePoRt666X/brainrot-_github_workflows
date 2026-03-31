@@ -1,0 +1,32 @@
+name: 🐦 X Post Raid
+
+on:
+  pull_request:
+    types: [opened, commented]
+
+jobs:
+  raid:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📝 Extract PR Energy
+        run: |
+          echo "📝 Scanning PR for brainrot content..."
+          echo "🔍 Analyzing rizz levels..."
+          echo "⚡ Ohio energy detected: CONFIRMED"
+          
+      - name: 🎯 Generate X Post
+        run: |
+          posts=(
+            "Just merged the most unhinged PR in GitHub history 💀🧠 #BrainrotWorkflows"
+            "POV: Your CI/CD pipeline has a purple suit and a laugh track 🃏🔥"
+            "This repo doesn't build software, it burns timelines ⚡ #Guest666"
+            "60fps Skibidi-TikTok-Ohio-Rizz apocalypse incoming 🎵💀"
+          )
+          echo "🐦 Post Generated: ${posts[$RANDOM % ${#posts[@}]}"
+          
+      - name: 🚀 Deploy to X
+        run: |
+          echo "🚀 Raiding X with maximum chaos..."
+          echo "📈 Engagement farming initiated"
+          echo "🔥 Algorithm arson complete"
+          echo "✅ The timeline is now rotten"

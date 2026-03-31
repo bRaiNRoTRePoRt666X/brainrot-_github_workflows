@@ -1,0 +1,34 @@
+name: 🔥 TikTok Algorithm Burner
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  burn:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🎵 Generate Skibidi Caption
+        run: |
+          captions=(
+            "POV: You touched grass once and now you're here"
+            "60fps Ohio Rizz energy only"
+            "Skibidi Dop Dop Yes Yes Yes"
+            "Fanum Tax collected from your FYP"
+            "This commit hits different at 3AM"
+          )
+          echo "🎬 Caption: ${captions[$RANDOM % ${#captions[@}]}"
+          
+      - name: 🔥 Set Algorithm on Fire
+        run: |
+          echo "🔥 Burning the algorithm..."
+          echo "📈 Engagement: +666%"
+          echo "📉 Sanity: -100%"
+          echo "Your FYP will never be the same"
+          
+      - name: 💀 Deploy to the For You Page
+        run: |
+          echo "📱 Deploying straight to FYP..."
+          echo "✅ Viral status: ACHIEVED"
+          echo "✅ Cringe status: LEGENDARY"

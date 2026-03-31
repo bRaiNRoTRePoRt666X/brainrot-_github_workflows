@@ -1,0 +1,62 @@
+name: 🤡 NORMIE ENERGY DETECTED
+description: Report suspicious normie behavior in the codebase
+title: "[NORMIE ALERT]: <Describe the cringe>"
+labels: ["normie", "cringe", "purge-needed"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚨 NORMIE ALERT 🚨
+        
+        You've detected normie energy in the asylum.
+        We will investigate. We will purge. We will laugh.
+        
+  - type: input
+    id: file_path
+    attributes:
+      label: File/Location
+      description: Where did you detect the normie energy?
+      placeholder: "e.g., .github/workflows/clean-code.yml"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence of Normie Behavior
+      description: What makes this code suspicious?
+      placeholder: "This PR has proper documentation and follows best practices..."
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Normie Severity
+      description: How bad is the cringe?
+      options:
+        - Mild (slightly too professional)
+        - Moderate (uses proper variable names)
+        - Severe (has actual documentation)
+        - CRITICAL (touches grass unironically)
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: action
+    attributes:
+      label: Suggested Actions
+      description: How should we handle this normie situation?
+      options:
+        - label: "Add brainrot comments to all functions"
+        - label: "Replace variable names with Ohio references"
+        - label: "Inject Skibidi Dop Dop into all strings"
+        - label: "Full file purge (send to the void)"
+        
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **🃏 No normie left behind.**
+        
+        *The asylum maintains its standards.*
