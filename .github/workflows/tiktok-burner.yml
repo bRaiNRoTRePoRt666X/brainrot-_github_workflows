@@ -1,34 +1,21 @@
-name: 🔥 TikTok Algorithm Burner
+name: TikTok Algorithm Burner
 
 on:
+  schedule:
+    - cron: '0 3 * * *'  # 3AM summoning energy
   workflow_dispatch:
-  push:
-    branches: [main]
 
 jobs:
   burn:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - name: 🎵 Generate Skibidi Caption
+      - uses: actions/checkout@v4
+
+      - name: Ignite the algorithm
         run: |
-          captions=(
-            "POV: You touched grass once and now you're here"
-            "60fps Ohio Rizz energy only"
-            "Skibidi Dop Dop Yes Yes Yes"
-            "Fanum Tax collected from your FYP"
-            "This commit hits different at 3AM"
-          )
-          echo "🎬 Caption: ${captions[$RANDOM % ${#captions[@}]}"
-          
-      - name: 🔥 Set Algorithm on Fire
-        run: |
-          echo "🔥 Burning the algorithm..."
-          echo "📈 Engagement: +666%"
-          echo "📉 Sanity: -100%"
-          echo "Your FYP will never be the same"
-          
-      - name: 💀 Deploy to the For You Page
-        run: |
-          echo "📱 Deploying straight to FYP..."
-          echo "✅ Viral status: ACHIEVED"
-          echo "✅ Cringe status: LEGENDARY"
+          echo "🔥 BURNING TIKTOK ALGO 🔥"
+          # your brainrot script here
+          python scripts/burn.py || echo "Script missing? Fix me!"

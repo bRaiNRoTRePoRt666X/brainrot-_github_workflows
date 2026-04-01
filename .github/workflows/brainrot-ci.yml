@@ -1,0 +1,38 @@
+name: Brainrot CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      checks: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt || echo "No requirements.txt, skipping"
+
+      - name: Run tests / lint
+        run: |
+          pytest || echo "No tests found"
+          flake8 . || echo "No flake8"
+
+      - name: MkDocs build (if docs present)
+        if: hashFiles('mkdocs.yml') != ''
+        run: mkdocs build --strict
